@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
         if (isAuthenticated) {
             sessionStorage.setItem('userData', JSON.stringify(userData));
-            window.location.href = 'Profile/';
+            window.location.href = 'https://the-club-app.netlify.app/profile/';
         } else {
             alert('Invalid phone number or passphrase.');
         }
