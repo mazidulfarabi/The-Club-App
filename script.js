@@ -16,8 +16,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                 userData = {
                     name: data.values[i][2],
                     post: data.values[i][3],
-                    designs: data.values[i][2],
-                    captions: data.values[i][3],
+                    designs: data.values[i][4],
+                    captions: data.values[i][5],
                     // Add other fields as necessary
                 };
                 break;
