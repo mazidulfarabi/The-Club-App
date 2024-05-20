@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
         if (isAuthenticated) {
             sessionStorage.setItem('userData', JSON.stringify(userData));
-            window.location.href = 'profile/';
+            window.location.href = 'Profile/';
         } else {
             alert('Invalid phone number or passphrase.');
         }
