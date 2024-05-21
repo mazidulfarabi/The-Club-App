@@ -22,12 +22,12 @@ $('#my-form').submit(function(e) {
         0: function(data) { //0 is when Google gives a CORS error, don't worry it went through
           //success
           $('#form-success').text('hooray!');
-          window.location.href="https://the-club-app.netlify.app/";
+          window.location.href="https://the-club-app.netlify.app/profile";
         }, 
         200: function(data) {//200 is a success code. it went through!
           //success
           $('#form-success').text('Success!');
-          window.location.href="https://the-club-app.netlify.app/";
+          window.location.href="https://the-club-app.netlify.app/tasks";
           alert(`Thank you for submitting!`);
         },
         403: function(data) {//403 is when something went wrong and the submission didn't go through
