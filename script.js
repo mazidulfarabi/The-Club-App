@@ -20,6 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                     captions: data.values[i][5],
                     image: data.values[i][6],
                     social: data.values[i][7],
+                    phone: data.values[i][0],
                     // Add other fields as necessary
                 };
                 break;

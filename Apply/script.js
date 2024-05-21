@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var userData = JSON.parse(sessionStorage.getItem('userData'));
+    if (userData) {
+        document.getElementById('userPhone').value = userData.phone;
+        // Display other fields as necessary
+    } else {
+        window.location.href = 'https://the-club-app.netlify.app/';
+    }
+});
+
 //selector from your HTML form
 $('#my-form').submit(function(e) {
     //prevent the form from submiting so we can post to the google form
