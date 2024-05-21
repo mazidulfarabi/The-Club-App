@@ -15,7 +15,7 @@
             document.getElementById('postedByPost').textContent = data.values[i][6];
                 break;
         }
-            window.location.href = 'https://the-club-app.netlify.app/profile/';
+
 
 
     });
