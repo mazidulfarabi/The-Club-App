@@ -33,32 +33,26 @@
                 <p class="w-lg-50">Complete these tasks to rank up in the Club!</p>
             </div>
         </div>
-        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">
-                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2">Design Task - 100 Points | 15$</span>
-                    <h4>Design an X-banner</h4><img alt="Motivational simple inscription against doubts" src="assets/img/pexels-photo-5238645-1.jpeg" style="margin-right: 30%;margin-left: 30%;">
-                    <p>Design the event banner for the Club's upcoming event on psychological health.</p>
-                    <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" alt="A woman in a purple shirt and blue jeans standing in front of a large poster" width="50" height="50" src="assets/img/pexels-photo-20173867.jpeg">
-                        <div>
-                            <p class="fw-bold mb-0">Michelle Kelly</p>
-                            <p class="text-muted mb-0">President, XYZ Club</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="p-4"><span class="badge rounded-pill bg-primary mb-2" id="taskType">Design Task - 100 Points | 15$</span>
-                    <h4 id="taskTitle">Design a Poster</h4><img id="taskImage" alt="Pink color neon glowing text with poetic and inspiring words You are flowers on the road on black background" src="assets/img/pexels-photo-5745012-1.jpeg" style="margin-right: 30%;margin-left: 30%;">
-                    <p id="taskDetails">Design the event banner for the Club's upcoming event on psychological health.</p>
-                    <div class="d-flex"><img id="postedByImage" class="rounded-circle flex-shrink-0 me-3 fit-cover" alt="A woman in a purple shirt and blue jeans standing in front of a large poster" width="50" height="50" src="assets/img/pexels-photo-20173867.jpeg">
-                        <div>
-                            <p id="postedByName" class="fw-bold mb-0">Michelle Kelly</p>
-                            <p id = "postedByPost" class="text-muted mb-0">President, XYZ Club</p>
-                        </div>
+        <div id="taskContainer"></div> <!-- Container to hold all the tasks -->
+    
+    <template id="taskTemplate">
+        <div class="col">
+            <div class="p-4">
+                <span class="badge rounded-pill bg-primary mb-2 taskType">Design Task - 100 Points | 15$</span>
+                <h4 class="taskTitle">Design a Poster</h4>
+                <img class="taskImage" alt="Pink color neon glowing text with poetic and inspiring words You are flowers on the road on black background" src="assets/img/pexels-photo-5745012-1.jpeg" style="margin-right: 30%;margin-left: 30%;">
+                <p class="taskDetails">Design the event banner for the Club's upcoming event on psychological health.</p>
+                <div class="d-flex">
+                    <img class="postedByImage rounded-circle flex-shrink-0 me-3 fit-cover" alt="A woman in a purple shirt and blue jeans standing in front of a large poster" width="50" height="50" src="assets/img/pexels-photo-20173867.jpeg">
+                    <div>
+                        <p class="postedByName fw-bold mb-0">Michelle Kelly</p>
+                        <p class="postedByPost text-muted mb-0">President, XYZ Club</p>
                     </div>
                 </div>
             </div>
         </div>
+    </template>
+
         <footer class="text-center">
             <div class="container text-muted py-4 py-lg-5">
                 <ul class="list-inline">
