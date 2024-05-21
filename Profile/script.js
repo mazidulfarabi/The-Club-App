@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('userCaptions').textContent = userData.captions;
         // Display other fields as necessary
     } else {
-        window.location.href = 'login.html';
+        window.location.href = 'https://the-club-app.netlify.app/';
     }
 });
