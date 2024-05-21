@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'https://the-club-app.netlify.app/';
     }
 
-    var url = "https://sheets.googleapis.com/v4/spreadsheets/1zTiZgTCnsMQASTsBvnIteXz63Hyt6DphPNKm60Rlces/values/members?alt=json&key=AIzaSyCJ4u6ZfdiiEAVh5p0bv4eoRIoYKGCTyR0";
+    var url = "https://sheets.googleapis.com/v4/spreadsheets/1zTiZgTCnsMQASTsBvnIteXz63Hyt6DphPNKm60Rlces/values/tasks?alt=json&key=AIzaSyCJ4u6ZfdiiEAVh5p0bv4eoRIoYKGCTyR0";
 
     $.getJSON(url, function(data) {
 
