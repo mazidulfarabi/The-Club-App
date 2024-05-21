@@ -18,6 +18,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
                     post: data.values[i][3],
                     designs: data.values[i][4],
                     captions: data.values[i][5],
+                    image: data.values[i][6],
+                    social: data.values[i][7],
                     // Add other fields as necessary
                 };
                 break;
