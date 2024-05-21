@@ -1,9 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var userData = JSON.parse(sessionStorage.getItem('userData'));
-    if (userData) {
-    } else {
-        window.location.href = 'https://the-club-app.netlify.app/';
-    }
 
     var url = "https://sheets.googleapis.com/v4/spreadsheets/1zTiZgTCnsMQASTsBvnIteXz63Hyt6DphPNKm60Rlces/values/tasks?alt=json&key=AIzaSyCJ4u6ZfdiiEAVh5p0bv4eoRIoYKGCTyR0";
 
@@ -25,4 +19,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     });
-})
